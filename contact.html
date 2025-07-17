@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Basic Page Needs
+	================================================== -->
+        <meta charset="utf-8" />
+        <title>SmartAblauf</title>
+
+        <!-- Mobile Specific Metas
+	================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="Lernplattform zur Automatisierung von Büroprozessen mit praxisorientierten Anleitungen, Methoden und Tools für effiziente Arbeitsabläufe."
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+        />
+
+        <!-- theme meta -->
+        <meta name="theme-name" content="educenter" />
+
+        <!-- ** Plugins Needed for the Project ** -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css" />
+        <!-- themefy-icon -->
+        <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+        <!-- animation css -->
+        <link rel="stylesheet" href="plugins/animate/animate.css" />
+        <!-- aos -->
+        <link rel="stylesheet" href="plugins/aos/aos.css" />
+        <!-- venobox popup -->
+        <link rel="stylesheet" href="plugins/venobox/venobox.css" />
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!--Favicon-->
+        <link
+            rel="shortcut icon"
+            href="images/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <!-- preloader start -->
+        <div class="preloader">
+            <img src="images/preloader.gif" alt="preloader" />
+        </div>
+        <!-- preloader end -->
+
+        <!-- header -->
+        <header class="fixed-top header">
+            <!-- navbar -->
+            <div class="navigation w-100">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                        <a class="navbar-brand" href="index.html">
+                            <h2 style="font-weight: bold; color: #ffbc3b">
+                                SmartAblauf
+                            </h2>
+                        </a>
+                        <button
+                            class="navbar-toggler rounded-0"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navigation"
+                            aria-controls="navigation"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navigation">
+                            <ul class="navbar-nav ml-auto text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"
+                                        >Startseite</a
+                                    >
+                                </li>
+                                <li class="nav-item @@about">
+                                    <a class="nav-link" href="about.html"
+                                        >Über Uns</a
+                                    >
+                                </li>
+                                <li class="nav-item @@courses">
+                                    <a class="nav-link" href="services.html"
+                                        >Anleitungen</a
+                                    >
+                                </li>
+                                <li class="nav-item @@blog">
+                                    <a class="nav-link" href="testimonials.html"
+                                        >Erfahrungsberichte</a
+                                    >
+                                </li>
+                                <li class="nav-item @@contac active">
+                                    <a class="nav-link" href="contact.html"
+                                        >Kontakt</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- page title -->
+        <section
+            class="page-title-section overlay"
+            data-background="images/backgrounds/page-title.jpg"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="list-inline custom-breadcrumb mb-2">
+                            <li class="list-inline-item">
+                                <a
+                                    class="h2 text-primary font-secondary"
+                                    href="index.html"
+                                    >Startseite</a
+                                >
+                            </li>
+                            <li
+                                class="list-inline-item text-white h3 font-secondary nasted"
+                            >
+                                Kontakt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /page title -->
+
+        <!-- contact -->
+        <section class="section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-title">Kontaktieren Sie uns</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <form action="/contact.html" method="POST">
+                            <input
+                                type="text"
+                                class="form-control mb-3"
+                                id="name"
+                                name="name"
+                                placeholder="Ihr Name"
+                                required
+                            />
+                            <input
+                                type="email"
+                                class="form-control mb-3"
+                                id="email"
+                                name="mail"
+                                placeholder="Ihre E-Mail-Adresse"
+                                required
+                            />
+                            <div
+                                id="result"
+                                style="color: red; font-size: 12px"
+                            ></div>
+                            <input
+                                type="text"
+                                class="form-control mb-3"
+                                id="subject"
+                                name="subject"
+                                placeholder="Betreff"
+                                required
+                            />
+                            <textarea
+                                name="message"
+                                id="message"
+                                class="form-control mb-3"
+                                placeholder="Ihre Nachricht"
+                                required
+                            ></textarea>
+                            <button
+                                type="submit"
+                                id="submit"
+                                onclick="sendForm()"
+                                value="send"
+                                class="btn btn-primary"
+                            >
+                                NACHRICHT SENDEN
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="mb-5">
+                            Wir bieten fundierte Anleitungen und Unterstützung
+                            zur Automatisierung von Büroprozessen. Unser
+                            Anliegen ist es, Ihnen die nötigen Werkzeuge und
+                            Informationen zu vermitteln, damit Sie Abläufe in
+                            Ihrer Arbeitsumgebung besser verstehen und
+                            effizienter gestalten können. Für Fragen oder
+                            weiterführende Informationen stehen wir Ihnen
+                            jederzeit gern zur Verfügung.
+                        </p>
+                        <a
+                            href="tel:+4960748059890"
+                            class="text-color h5 d-block"
+                        >
+                            +4960748059890</a
+                        >
+                        <a
+                            href="mailto:smart_ablauf@gmail.com"
+                            class="mb-5 text-color h5 d-block"
+                            >smart_ablauf@gmail.com</a
+                        >
+                        <p>
+                            Wernher-von-Braun-Straße 16, 63303 Dreieich,
+                            Deutschland
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /contact -->
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113325.88945148562!2d8.67925322963501!3d49.9618819694288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd6d46c64f1eff%3A0x933e076950e44595!2sWinandoffice!5e0!3m2!1suk!2sua!4v1752736581192!5m2!1suk!2sua"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- footer -->
+        <footer>
+            <!-- newsletter -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-md-9 ml-auto bg-primary py-5 newsletter-block"
+                        >
+                            <h3 class="text-white">Jetzt abonnieren</h3>
+                            <form action="thanks.html" method="get">
+                                <div class="input-wrapper">
+                                    <input
+                                        type="email"
+                                        class="form-control border-0"
+                                        id="email"
+                                        name="newsletter"
+                                        placeholder="E-Mail-Adresse..."
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        id="submit"
+                                        value="send"
+                                        class="btn btn-primary"
+                                    >
+                                        Anmelden
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer content -->
+            <div class="footer bg-footer section border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                            <!-- logo -->
+                            <a class="logo-footer" href="index.html">
+                                <h2 style="color: #fff">SmartAblauf</h2>
+                            </a>
+                            <p>
+                                Willkommen bei SmartAblauf – Ihrer Plattform für
+                                praxisnahe Anleitungen zur Automatisierung von
+                                Büroprozessen. Unser Ziel ist es, Ihnen
+                                verständliche und fundierte Inhalte zur
+                                Verfügung zu stellen, um Ihre täglichen
+                                Arbeitsabläufe effizienter zu gestalten.
+                                Entdecken Sie neue Wege der digitalen
+                                Prozessoptimierung im Büroalltag.
+                            </p>
+                        </div>
+                        <!-- company -->
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-4 col-6 mb-5 mb-md-0"
+                        >
+                            <h4 class="text-white mb-5">LINKS</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a class="text-color" href="index.html"
+                                        >Startseite</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-color" href="about.html"
+                                        >Über uns</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-color" href="contact.html"
+                                        >Kontakt</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="terms-of-use.html"
+                                        >Nutzungsbedingungen</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="privacy-policy.html"
+                                        >Datenschutzrichtlinie</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="cookie-policy.html"
+                                        >Cookie-Richtlinie</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="policy-of-reversal.html"
+                                        >Widerrufsbelehrung</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-4 col-6 mb-5 mb-md-0"
+                        >
+                            <h4 class="text-white mb-5">KONTAKT</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    Wernher-von-Braun-Straße 16, 63303 Dreieich,
+                                    Germany
+                                </li>
+                                <li class="mb-2">+4960748059890</li>
+                                <li class="mb-2">smart_ablauf@gmail.com</li>
+                            </ul>
+                        </div>
+                        <!-- links -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Zustimmung</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um Ihnen eine bessere und
+                    relevantere Nutzererfahrung zu bieten.
+                    <a href="cookie-policy.html">Mehr erfahren...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Akzeptieren
+                </button>
+                <button class="cookie-button" id="declineBtn">Ablehnen</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- jQuery (use trusted CDN) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Slick Slider -->
+        <script src="plugins/slick/slick.min.js"></script>
+
+        <!-- VenoBox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.js"></script>
+
+        <!-- ✅ Slick Animation Plugin (Fixes the error) -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-animation@1.0.0/slick-animation.min.js"></script>
+
+        <!-- Your custom scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>

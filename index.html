@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Basic Page Needs
+	================================================== -->
+        <meta charset="utf-8" />
+        <title>SmartAblauf</title>
+
+        <!-- Mobile Specific Metas
+	================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="Lernplattform zur Automatisierung von Büroprozessen mit praxisorientierten Anleitungen, Methoden und Tools für effiziente Arbeitsabläufe."
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+        />
+
+        <!-- theme meta -->
+        <meta name="theme-name" content="educenter" />
+
+        <!-- ** Plugins Needed for the Project ** -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css" />
+        <!-- themefy-icon -->
+        <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+        <!-- animation css -->
+        <link rel="stylesheet" href="plugins/animate/animate.css" />
+        <!-- aos -->
+        <link rel="stylesheet" href="plugins/aos/aos.css" />
+        <!-- venobox popup -->
+        <link rel="stylesheet" href="plugins/venobox/venobox.css" />
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!--Favicon-->
+        <link
+            rel="shortcut icon"
+            href="images/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <!-- preloader start -->
+        <div class="preloader">
+            <img src="images/preloader.gif" alt="preloader" />
+        </div>
+        <!-- preloader end -->
+
+        <!-- header -->
+        <header class="fixed-top header">
+            <!-- navbar -->
+            <div class="navigation w-100">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                        <a class="navbar-brand" href="index.html">
+                            <h2 style="font-weight: bold; color: #ffbc3b">
+                                SmartAblauf
+                            </h2>
+                        </a>
+                        <button
+                            class="navbar-toggler rounded-0"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navigation"
+                            aria-controls="navigation"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navigation">
+                            <ul class="navbar-nav ml-auto text-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"
+                                        >Startseite</a
+                                    >
+                                </li>
+                                <li class="nav-item @@about">
+                                    <a class="nav-link" href="about.html"
+                                        >Über Uns</a
+                                    >
+                                </li>
+                                <li class="nav-item @@courses">
+                                    <a class="nav-link" href="services.html"
+                                        >Anleitungen</a
+                                    >
+                                </li>
+                                <li class="nav-item @@blog">
+                                    <a class="nav-link" href="testimonials.html"
+                                        >Erfahrungsberichte</a
+                                    >
+                                </li>
+                                <li class="nav-item @@contact">
+                                    <a class="nav-link" href="contact.html"
+                                        >Kontakt</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- hero slider -->
+        <section
+            class="hero-section overlay bg-cover"
+            data-background="images/banner/banner-1.jpg"
+        >
+            <div class="container">
+                <div class="hero-slider">
+                    <!-- slider item -->
+                    <div class="hero-slider-item">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h1
+                                    class="text-white"
+                                    data-animation-out="fadeOutRight"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInLeft"
+                                    data-delay-in=".1"
+                                >
+                                    Zugang zu zentralem Wissen
+                                </h1>
+                                <p
+                                    class="text-muted mb-4"
+                                    data-animation-out="fadeOutRight"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInLeft"
+                                    data-delay-in=".4"
+                                >
+                                    Entdecken Sie praxisorientierte Inhalte zur
+                                    Automatisierung von Büroabläufen und zur
+                                    strukturierten Gestaltung von
+                                    Arbeitsprozessen.
+                                </p>
+                                <a
+                                    href="contact.html"
+                                    class="btn btn-primary"
+                                    data-animation-out="fadeOutRight"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInLeft"
+                                    data-delay-in=".7"
+                                >
+                                    Kontaktieren Sie uns
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider item -->
+                    <div class="hero-slider-item">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h1
+                                    class="text-white"
+                                    data-animation-out="fadeOutUp"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInDown"
+                                    data-delay-in=".1"
+                                >
+                                    Individuelle Lernpfade
+                                </h1>
+                                <p
+                                    class="text-muted mb-4"
+                                    data-animation-out="fadeOutUp"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInDown"
+                                    data-delay-in=".4"
+                                >
+                                    Lernen Sie von Fachleuten, wie man
+                                    wiederkehrende Aufgaben automatisiert und
+                                    interne Abläufe systematisch verbessert.
+                                </p>
+                                <a
+                                    href="contact.html"
+                                    class="btn btn-primary"
+                                    data-animation-out="fadeOutUp"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInDown"
+                                    data-delay-in=".7"
+                                >
+                                    Kontaktieren Sie uns
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider item -->
+                    <div class="hero-slider-item">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h1
+                                    class="text-white"
+                                    data-animation-out="fadeOutDown"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInUp"
+                                    data-delay-in=".1"
+                                >
+                                    Effizienz durch Automatisierung
+                                </h1>
+                                <p
+                                    class="text-muted mb-4"
+                                    data-animation-out="fadeOutDown"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="fadeInUp"
+                                    data-delay-in=".4"
+                                >
+                                    Lernen Sie, wie digitale Werkzeuge Prozesse
+                                    im Büro strukturieren, Zeit sparen und
+                                    standardisierte Abläufe ermöglichen.
+                                </p>
+                                <a
+                                    href="contact.html"
+                                    class="btn btn-primary"
+                                    data-animation-out="fadeOutDown"
+                                    data-delay-out="5"
+                                    data-duration-in=".3"
+                                    data-animation-in="zoomIn"
+                                    data-delay-in=".7"
+                                >
+                                    Kontaktieren Sie uns
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /hero slider -->
+
+        <!-- banner-feature -->
+        <section class="bg-gray overflow-md-hidden">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-xl-4 col-lg-5 align-self-end">
+                        <img
+                            class="img-fluid w-100"
+                            src="images/banner/banner-feature.png"
+                            alt="banner-feature"
+                        />
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div
+                            class="row feature-blocks bg-gray justify-content-between"
+                        >
+                            <div
+                                class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left"
+                            >
+                                <i
+                                    class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"
+                                ></i>
+                                <h3 class="mb-xl-4 mb-lg-3 mb-4">
+                                    Strukturierte Prozessanalyse
+                                </h3>
+                                <p>
+                                    Lernen Sie, wie man bestehende Abläufe im
+                                    Büro analysiert und digitale Verbesserungen
+                                    gezielt implementiert. Unsere Inhalte
+                                    basieren auf wissenschaftlich fundierten
+                                    Methoden.
+                                </p>
+                            </div>
+                            <div
+                                class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left"
+                            >
+                                <i
+                                    class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"
+                                ></i>
+                                <h3 class="mb-xl-4 mb-lg-3 mb-4">
+                                    Methodisches Vorgehen
+                                </h3>
+                                <p>
+                                    Unsere didaktischen Materialien bieten klare
+                                    Strukturen zur Einführung von
+                                    Automatisierung in typischen Büroumgebungen
+                                    – praxisnah und nachvollziehbar.
+                                </p>
+                            </div>
+                            <div
+                                class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left"
+                            >
+                                <i
+                                    class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"
+                                ></i>
+                                <h3 class="mb-xl-4 mb-lg-3 mb-4">
+                                    Werkzeuge und Technologien
+                                </h3>
+                                <p>
+                                    Erfahren Sie, welche digitalen Werkzeuge und
+                                    Plattformen sich zur Automatisierung von
+                                    Arbeitsabläufen eignen – von
+                                    Formularprozessen bis zur
+                                    Aufgabenverteilung.
+                                </p>
+                            </div>
+                            <div
+                                class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left"
+                            >
+                                <i
+                                    class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"
+                                ></i>
+                                <h3 class="mb-xl-4 mb-lg-3 mb-4">
+                                    Planung und Umsetzung
+                                </h3>
+                                <p>
+                                    Sie erhalten Leitfäden zur systematischen
+                                    Planung und Umsetzung von
+                                    Automatisierungslösungen in administrativen
+                                    Prozessen – von der Analyse bis zur
+                                    Einführung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /banner-feature -->
+
+        <!-- cta -->
+        <section class="section bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6 class="text-white font-secondary mb-0">
+                            Der erste Schritt zur Prozessoptimierung
+                        </h6>
+                        <h2 class="section-title text-white">
+                            Bereit, Ihre Arbeitsabläufe systematisch zu
+                            verbessern?
+                        </h2>
+                        <a href="contact.html" class="btn btn-light"
+                            >Jetzt starten</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /cta -->
+
+        <!-- about us -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-2 order-md-1">
+                        <h2 class="section-title">
+                            Unser Ansatz zur Automatisierung von Büroprozessen
+                        </h2>
+                        <p>
+                            Im Zentrum unserer Arbeit steht die didaktische
+                            Vermittlung von Methoden zur Automatisierung
+                            alltäglicher Büroabläufe. Ziel ist es, Strukturen zu
+                            analysieren, Optimierungspotenziale zu erkennen und
+                            automatisierte Lösungen auf Grundlage fundierter
+                            Modelle zu implementieren.
+                        </p>
+                        <p>
+                            Unsere Methodik basiert auf einer systematischen
+                            Erfassung bestehender Prozesse, wobei individuelle
+                            Anforderungen, Arbeitsumgebungen und Zielsetzungen
+                            berücksichtigt werden. Daraus entstehen
+                            strukturierte Handlungsempfehlungen, die eine
+                            effiziente und nachhaltige Umsetzung ermöglichen.
+                        </p>
+                        <a href="about.html" class="btn btn-outline-primary"
+                            >Mehr erfahren</a
+                        >
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+                        <img
+                            class="img-fluid w-100"
+                            src="images/about/approach.jpg"
+                            alt="about image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /about us -->
+
+        <!-- success story -->
+        <section
+            class="section bg-cover"
+            data-background="images/backgrounds/success-story.jpg"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8">
+                        <div class="bg-white p-5">
+                            <h2 class="section-title">
+                                Anwendungsbeispiele aus der Praxis
+                            </h2>
+                            <p>
+                                In dieser Rubrik präsentieren wir dokumentierte
+                                Anwendungsfälle, in denen Mitarbeitende und
+                                Teams durch den gezielten Einsatz
+                                automatisierter Büroprozesse ihre Arbeitsabläufe
+                                verbessern konnten. Der Fokus liegt auf den
+                                analysierten Ausgangslagen und den
+                                implementierten Maßnahmen.
+                            </p>
+                            <p>
+                                Die dargestellten Fallstudien verdeutlichen, wie
+                                strukturierte Vorgehensweisen, digitale
+                                Werkzeuge und methodisches Denken zur
+                                Verbesserung von Effizienz, Kommunikation und
+                                internen Abläufen beitragen können. Die
+                                Erkenntnisse dienen als Vorlage für ähnliche
+                                Anwendungsfelder.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /success story -->
+
+        <!-- blog -->
+        <section class="section pt-0 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            Unsere neuesten Einblicke in die
+                            Prozessautomatisierung
+                        </h2>
+                        <p>
+                            Bleiben Sie auf dem Laufenden mit unseren aktuellen
+                            Veröffentlichungen, in denen wir fundierte Einblicke
+                            und praxisnahe Anleitungen zur Automatisierung von
+                            Büroprozessen teilen. Unsere Artikel decken eine
+                            Vielzahl von Themen ab, die Ihnen helfen,
+                            Arbeitsabläufe effizienter zu gestalten und moderne
+                            Tools sinnvoll einzusetzen.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- blog post -->
+                    <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <div
+                            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow"
+                        >
+                            <img
+                                class="card-img-top rounded-0"
+                                src="images/blog/post-1.jpg"
+                                alt="Post thumb"
+                            />
+                            <div class="card-body">
+                                <!-- post meta -->
+                                <ul class="list-inline mb-3">
+                                    <!-- post date -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        28. August 2025
+                                    </li>
+                                    <!-- author -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        Von Lukas Schreiber
+                                    </li>
+                                </ul>
+                                <a>
+                                    <h4 class="card-title">
+                                        Methoden zur Automatisierung
+                                        alltäglicher Büroaufgaben
+                                    </h4>
+                                </a>
+                                <p class="card-text">
+                                    In diesem Beitrag analysieren wir bewährte
+                                    Strategien, um wiederkehrende Aufgaben im
+                                    Büroalltag durch digitale Tools zu
+                                    automatisieren. Der Fokus liegt auf der
+                                    Reduktion manueller Arbeitsschritte durch
+                                    strukturierte Vorgehensweisen.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- blog post -->
+                    <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <div
+                            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow"
+                        >
+                            <img
+                                class="card-img-top rounded-0"
+                                src="images/blog/post-2.jpg"
+                                alt="Post thumb"
+                            />
+                            <div class="card-body">
+                                <!-- post meta -->
+                                <ul class="list-inline mb-3">
+                                    <!-- post date -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        9. Mai 2024
+                                    </li>
+                                    <!-- author -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        Von Clara Meinhardt
+                                    </li>
+                                </ul>
+                                <a>
+                                    <h4 class="card-title">
+                                        Digitale Werkzeuge zur
+                                        Prozessoptimierung im Büro
+                                    </h4>
+                                </a>
+                                <p class="card-text">
+                                    Dieser Artikel beleuchtet ausgewählte
+                                    digitale Werkzeuge, die den Arbeitsfluss in
+                                    Büroumgebungen optimieren. Im Mittelpunkt
+                                    stehen systematische Ansätze zur Integration
+                                    solcher Tools in bestehende Abläufe.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- blog post -->
+                    <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                        <div
+                            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow"
+                        >
+                            <img
+                                class="card-img-top rounded-0"
+                                src="images/blog/post-3.jpg"
+                                alt="Post thumb"
+                            />
+                            <div class="card-body">
+                                <!-- post meta -->
+                                <ul class="list-inline mb-3">
+                                    <!-- post date -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        14. Juni 2024
+                                    </li>
+                                    <!-- author -->
+                                    <li class="list-inline-item mr-3 ml-0">
+                                        Von Markus Lenz
+                                    </li>
+                                </ul>
+                                <a>
+                                    <h4 class="card-title">
+                                        Automatisierung als Schlüssel zur
+                                        Effizienzsteigerung
+                                    </h4>
+                                </a>
+                                <p class="card-text">
+                                    Automatisierung ermöglicht strukturierte
+                                    Arbeitsprozesse und eine Reduzierung von
+                                    Fehlerquellen. Dieser Beitrag zeigt, wie
+                                    durch gezielte Einführung von
+                                    Automatisierungsroutinen die
+                                    Ablauforganisation in Büros nachhaltig
+                                    verbessert werden kann.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- /blog -->
+
+        <section id="impressum" class="section bg-light pt-5 pb-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Impressum</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h5>Angaben gemäß § 5 TMG:</h5>
+                        <p>
+                            Max Mustermann<br />
+                            Wernher-von-Braun-Straße 16<br />
+                            63303 Dreieich<br />
+                            Deutschland
+                        </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5>Kontakt:</h5>
+                        <p>
+                            Telefon: +49 6074 8059890<br />
+                            E-Mail: smart_ablauf@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h5>
+                            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+                        </h5>
+                        <p>
+                            Max Mustermann<br />
+                            Adresse wie oben
+                        </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5>Umsatzsteuer-ID:</h5>
+                        <p>
+                            Umsatzsteuer-Identifikationsnummer gemäß §27 a
+                            Umsatzsteuergesetz:<br />
+                            DE123456789
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5>Registergericht:</h5>
+                        <p>
+                            Amtsgericht Dreieich<br />
+                            Registernummer: HRB 12345
+                        </p>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+
+                <h3>Haftungsausschluss</h3>
+                <p>
+                    Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir
+                    keine Haftung für die Inhalte externer Links. Für den Inhalt
+                    der verlinkten Seiten sind ausschließlich deren Betreiber
+                    verantwortlich.
+                </p>
+
+                <p>
+                    Weitere Informationen zum Datenschutz finden Sie in unserer
+                    <a href="privacy-policy.html">Datenschutzerklärung</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <!-- newsletter -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-md-9 ml-auto bg-primary py-5 newsletter-block"
+                        >
+                            <h3 class="text-white">Jetzt abonnieren</h3>
+                            <form action="thanks.html" method="get">
+                                <div class="input-wrapper">
+                                    <input
+                                        type="email"
+                                        class="form-control border-0"
+                                        id="email"
+                                        name="newsletter"
+                                        placeholder="E-Mail-Adresse..."
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        id="submit"
+                                        value="send"
+                                        class="btn btn-primary"
+                                    >
+                                        Anmelden
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer content -->
+            <div class="footer bg-footer section border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                            <!-- logo -->
+                            <a class="logo-footer" href="index.html">
+                                <h2 style="color: #fff">SmartAblauf</h2>
+                            </a>
+                            <p>
+                                Willkommen bei SmartAblauf – Ihrer Plattform für
+                                praxisnahe Anleitungen zur Automatisierung von
+                                Büroprozessen. Unser Ziel ist es, Ihnen
+                                verständliche und fundierte Inhalte zur
+                                Verfügung zu stellen, um Ihre täglichen
+                                Arbeitsabläufe effizienter zu gestalten.
+                                Entdecken Sie neue Wege der digitalen
+                                Prozessoptimierung im Büroalltag.
+                            </p>
+                        </div>
+                        <!-- company -->
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-4 col-6 mb-5 mb-md-0"
+                        >
+                            <h4 class="text-white mb-5">LINKS</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a class="text-color" href="index.html"
+                                        >Startseite</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-color" href="about.html"
+                                        >Über uns</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-color" href="contact.html"
+                                        >Kontakt</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="terms-of-use.html"
+                                        >Nutzungsbedingungen</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="privacy-policy.html"
+                                        >Datenschutzrichtlinie</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="cookie-policy.html"
+                                        >Cookie-Richtlinie</a
+                                    >
+                                </li>
+                                <li class="mb-3">
+                                    <a
+                                        class="text-color"
+                                        href="policy-of-reversal.html"
+                                        >Widerrufsbelehrung</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-4 col-6 mb-5 mb-md-0"
+                        >
+                            <h4 class="text-white mb-5">KONTAKT</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    Wernher-von-Braun-Straße 16, 63303 Dreieich,
+                                    Germany
+                                </li>
+                                <li class="mb-2">+4960748059890</li>
+                                <li class="mb-2">smart_ablauf@gmail.com</li>
+                            </ul>
+                        </div>
+                        <!-- links -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Zustimmung</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um Ihnen eine bessere und
+                    relevantere Nutzererfahrung zu bieten.
+                    <a href="cookie-policy.html">Mehr erfahren...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Akzeptieren
+                </button>
+                <button class="cookie-button" id="declineBtn">Ablehnen</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- jQuery (use trusted CDN) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Slick Slider -->
+        <script src="plugins/slick/slick.min.js"></script>
+
+        <!-- VenoBox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.js"></script>
+
+        <!-- ✅ Slick Animation Plugin (Fixes the error) -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-animation@1.0.0/slick-animation.min.js"></script>
+
+        <!-- Your custom scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
